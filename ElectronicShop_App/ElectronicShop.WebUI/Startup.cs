@@ -2,7 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using ElectronicShop.Application.AppDbContext;
+using ElectronicShop.Application.Interfaces.IServices;
+using ElectronicShop.Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,9 +39,29 @@ namespace ElectronicShop.WebUI
 
             #endregion
 
-
+            //AUTHENTICATIONS
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";
+                options.AccessDeniedPath = "/Account/AccessDenied";
+                options.SlidingExpiration = true;
+                options.Cookie.Name = "ElectronicAppAdminAuthCookie";
+            });
 
             services.AddControllersWithViews();
+
+            //EMBDED Services
+            services.AddHttpContextAccessor();
+            services.AddSession(opts =>
+            {
+                opts.Cookie.IsEssential = true; // make the session cookie Essential
+            });
+
+            services.AddAutoMapper(typeof(Startup));
+
+            services.AddTransient<IHasherService, HasherService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ISessionService, SessionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +82,7 @@ namespace ElectronicShop.WebUI
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

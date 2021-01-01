@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Domain", "ElectronicShop.Domain\ElectronicShop.Domain.csproj", "{A37CBE77-2CF1-4D97-B4CB-5224E625E9FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicShop.Domain", "ElectronicShop.Domain\ElectronicShop.Domain.csproj", "{A37CBE77-2CF1-4D97-B4CB-5224E625E9FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Application", "ElectronicShop.Application\ElectronicShop.Application.csproj", "{A06D199D-3F08-4CF9-93FA-51F2822DA800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicShop.Application", "ElectronicShop.Application\ElectronicShop.Application.csproj", "{A06D199D-3F08-4CF9-93FA-51F2822DA800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Infrastructure", "ElectronicShop.Infrastructure\ElectronicShop.Infrastructure.csproj", "{0F995DF5-8A70-4528-B6AF-E3A264CDDDB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicShop.Infrastructure", "ElectronicShop.Infrastructure\ElectronicShop.Infrastructure.csproj", "{0F995DF5-8A70-4528-B6AF-E3A264CDDDB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.WebUI", "ElectronicShop.WebUI\ElectronicShop.WebUI.csproj", "{7AD386FD-AAAA-4E76-904B-AB126610A713}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElectronicShop.WebUI", "ElectronicShop.WebUI\ElectronicShop.WebUI.csproj", "{7AD386FD-AAAA-4E76-904B-AB126610A713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Resources", "ElectronicShop.Resources\ElectronicShop.Resources.csproj", "{11E36521-87D3-4B03-8CA9-66A01A33384E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7AD386FD-AAAA-4E76-904B-AB126610A713}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD386FD-AAAA-4E76-904B-AB126610A713}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD386FD-AAAA-4E76-904B-AB126610A713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E36521-87D3-4B03-8CA9-66A01A33384E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E36521-87D3-4B03-8CA9-66A01A33384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E36521-87D3-4B03-8CA9-66A01A33384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E36521-87D3-4B03-8CA9-66A01A33384E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
