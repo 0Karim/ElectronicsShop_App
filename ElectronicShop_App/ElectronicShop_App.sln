@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.Infrastructure", "ElectronicShop.Infrastructure\ElectronicShop.Infrastructure.csproj", "{0F995DF5-8A70-4528-B6AF-E3A264CDDDB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicShop.WebUI", "ElectronicShop.WebUI\ElectronicShop.WebUI.csproj", "{7AD386FD-AAAA-4E76-904B-AB126610A713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0F995DF5-8A70-4528-B6AF-E3A264CDDDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F995DF5-8A70-4528-B6AF-E3A264CDDDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F995DF5-8A70-4528-B6AF-E3A264CDDDB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD386FD-AAAA-4E76-904B-AB126610A713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD386FD-AAAA-4E76-904B-AB126610A713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD386FD-AAAA-4E76-904B-AB126610A713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD386FD-AAAA-4E76-904B-AB126610A713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
