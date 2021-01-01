@@ -1,0 +1,2 @@
+# ElectronicsShop_App
+This workshop is to develop a web site for an Electronics Shop. The shop sells 3 categories of products , The shop owner wanted this web site in order to display the electronics products and their prices.Moreover, the shop owner asked to have a registration system for the customers, where customers will be able to register, sign in. Registered customers will be able to place orders by filling a form for a single item he selects, and that item will be delivered to him and paid in by Cash on delivery (payment is not handled through the web site).
