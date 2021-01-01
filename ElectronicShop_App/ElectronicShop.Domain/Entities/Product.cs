@@ -11,7 +11,9 @@ namespace ElectronicShop.Domain.Entities
         [Key]
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string NameEn { get; set; }
+
+        public string NameAr { get; set; }
 
         public string Description { get; set; }
 
@@ -24,7 +26,7 @@ namespace ElectronicShop.Domain.Entities
         [ForeignKey("Category")]
         public int? CategoryId { get; set; }
 
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
 
     }
 }

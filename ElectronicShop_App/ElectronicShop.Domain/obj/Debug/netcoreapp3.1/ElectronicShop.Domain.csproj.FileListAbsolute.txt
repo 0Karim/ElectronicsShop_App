@@ -1,0 +1,9 @@
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\bin\Debug\netcoreapp3.1\ElectronicShop.Domain.deps.json
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\bin\Debug\netcoreapp3.1\ElectronicShop.Domain.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\bin\Debug\netcoreapp3.1\ElectronicShop.Domain.pdb
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\obj\Debug\netcoreapp3.1\ElectronicShop.Domain.csprojAssemblyReference.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\obj\Debug\netcoreapp3.1\ElectronicShop.Domain.AssemblyInfoInputs.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\obj\Debug\netcoreapp3.1\ElectronicShop.Domain.AssemblyInfo.cs
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\obj\Debug\netcoreapp3.1\ElectronicShop.Domain.csproj.CoreCompileInputs.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\obj\Debug\netcoreapp3.1\ElectronicShop.Domain.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Domain\obj\Debug\netcoreapp3.1\ElectronicShop.Domain.pdb

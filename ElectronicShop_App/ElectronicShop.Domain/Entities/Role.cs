@@ -14,6 +14,6 @@ namespace ElectronicShop.Domain.Entities
 
         public bool IsActive { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

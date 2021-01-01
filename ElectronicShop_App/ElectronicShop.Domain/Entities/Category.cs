@@ -10,11 +10,13 @@ namespace ElectronicShop.Domain.Entities
         [Key]
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string NameEn { get; set; }
+
+        public string NameAr { get; set; }
 
         public bool IsActive { get; set; }
 
-        public ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
 
     }
 }
