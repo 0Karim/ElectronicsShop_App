@@ -86,5 +86,24 @@ namespace ElectronicShop.Application.Repository
         {
             return _context.SaveChanges() > 0;
         }
+
+        #region First Or Default 
+
+        public T FirstOrDefault<T>(Expression<Func<T, bool>> predicate, string[] includes) where T : class
+        {
+            var query = InsializeQuery<T>();
+
+            if (includes.Any())
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+
+            return query.FirstOrDefault(predicate);
+        }
+
+        #endregion
     }
 }

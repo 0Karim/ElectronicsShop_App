@@ -22,5 +22,12 @@ namespace ElectronicShop.Application.Interfaces.IRepositories
         int Count<T>() where T : class;
 
         bool SaveChangesAsync();
+
+
+        #region FirstorDefault
+
+        T FirstOrDefault<T>(Expression<Func<T, bool>> predicate, string[] includes) where T : class;
+
+        #endregion
     }
 }

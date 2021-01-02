@@ -4,6 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using ElectronicShop.Application.Interfaces.IServices;
+using ElectronicShop.Domain;
+using ElectronicShop.Domain.Entities;
+using ElectronicShop.Infrastructure.Helpers;
+using ElectronicShop.WebUI.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,6 +41,48 @@ namespace ElectronicShop.WebUI.Controllers
             }
 
             return View(new LoginViewModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            string errorMessage;
+            User user;
+
+            if (userService.CheckLogin(model.UserName, model.Password, out errorMessage, out user))
+            {
+                var sessionUser = mapper.Map<SessionUser>(user);
+
+                await sessionService.LoginUser(HttpContext, sessionUser);
+
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                TempData[Constants.ErrorMessage] = errorMessage;
+                return View(model);
+            }
+        }
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("Login");
+        }
+
+        [HttpGet]
+        [Authorize]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ElectronicShop.Resources/1.0.0": {
+        "runtime": {
+          "ElectronicShop.Resources.dll": {}
+        },
+        "resources": {
+          "ar/ElectronicShop.Resources.resources.dll": {
+            "locale": "ar"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ElectronicShop.Resources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

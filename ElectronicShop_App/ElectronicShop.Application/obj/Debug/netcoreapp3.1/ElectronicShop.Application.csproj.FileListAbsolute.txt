@@ -1,13 +1,13 @@
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Application.deps.json
-D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Application.dll
-D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.AssemblyInfoInputs.cache
-D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.AssemblyInfo.cs
-D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.csprojAssemblyReference.cache
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Application.runtimeconfig.json
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Application.runtimeconfig.dev.json
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Application.dll
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Application.pdb
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Domain.dll
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\bin\Debug\netcoreapp3.1\ElectronicShop.Domain.pdb
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.csprojAssemblyReference.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.AssemblyInfoInputs.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.AssemblyInfo.cs
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.csproj.CoreCompileInputs.cache
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.csproj.CopyComplete
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Application\obj\Debug\netcoreapp3.1\ElectronicShop.Application.dll

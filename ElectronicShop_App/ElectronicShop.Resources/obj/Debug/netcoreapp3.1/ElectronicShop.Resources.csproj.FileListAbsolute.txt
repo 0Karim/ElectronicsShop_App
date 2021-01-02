@@ -1,0 +1,15 @@
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\bin\Debug\netcoreapp3.1\ElectronicShop.Resources.deps.json
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\bin\Debug\netcoreapp3.1\ElectronicShop.Resources.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\bin\Debug\netcoreapp3.1\ElectronicShop.Resources.pdb
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\bin\Debug\netcoreapp3.1\ar\ElectronicShop.Resources.resources.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.csprojAssemblyReference.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.Labels.resources
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.Messages.resources
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.Labels.ar.resources
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.csproj.GenerateResource.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.AssemblyInfoInputs.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.AssemblyInfo.cs
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.csproj.CoreCompileInputs.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ar\ElectronicShop.Resources.resources.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.Resources\obj\Debug\netcoreapp3.1\ElectronicShop.Resources.pdb
