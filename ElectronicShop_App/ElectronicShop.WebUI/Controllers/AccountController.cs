@@ -80,7 +80,7 @@ namespace ElectronicShop.WebUI.Controllers
 
         [HttpGet]
         [Authorize]
-        public IActionResult AccessDenied()
+        public IActionResult AccessDeined()
         {
             return View();
         }

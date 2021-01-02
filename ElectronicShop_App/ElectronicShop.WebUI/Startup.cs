@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using ElectronicShop.Application.AppDbContext;
+using ElectronicShop.Application.Interfaces.IRepositories;
 using ElectronicShop.Application.Interfaces.IServices;
+using ElectronicShop.Application.Repository;
 using ElectronicShop.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -59,6 +61,7 @@ namespace ElectronicShop.WebUI
 
             services.AddAutoMapper(typeof(Startup));
 
+            services.AddTransient<IRepository, Repository>();
             services.AddTransient<IHasherService, HasherService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ISessionService, SessionService>();
@@ -77,6 +80,8 @@ namespace ElectronicShop.WebUI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
