@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dJTxfAFKSauxQwuExIvci6gtK2anuWSgxvPq3Wq7ZBLvzGxrHD7BZnPqXv2aA4F6Ry7a7d4SR4W/VGa/htsi2A==",
+  "dgSpecHash": "fPwbbmCPIP5EfoUGwX0oI2GSlsd4A+02Kw4Lc82TmuDf4t3moxooDBq/9Zj+F3Dor5xstsh8DVvNrlC0LAKvLw==",
   "success": true,
   "projectFilePath": "D:\\MyLearn\\ElectronicShop\\ElectronicsShop_App\\ElectronicShop_App\\ElectronicShop.Infrastructure\\ElectronicShop.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -76,6 +76,7 @@
     "C:\\Users\\karim\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\karim\\.nuget\\packages\\system.linq.dynamic.core\\1.2.7\\system.linq.dynamic.core.1.2.7.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",

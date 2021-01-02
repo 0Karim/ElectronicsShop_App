@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ElectronicShop.Domain;
 using ElectronicShop.Domain.Entities;
+using ElectronicShop.WebUI.Models.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,10 @@ namespace ElectronicShop.WebUI.Models
                     .ForMember(user => user.UserName, options => options.MapFrom(user => user.UserName))
                     .ForMember(user => user.FullNameAr, options => options.MapFrom(user => user.NameAr))
                     .ForMember(user => user.FullNameEn , options => options.MapFrom(user => user.NameEn))
-                    .ForMember(user => user.Role, options => options.MapFrom(user => user.Role))
+                    .ForMember(user => user.Role, options => options.MapFrom(user => user.Role.RoleName))
                     .ForMember(user => user.RoleId, options => options.MapFrom(user => user.RoleId));
+
+            CreateMap<ElectronicShop.Domain.Entities.Product, ProductViewModel>().ReverseMap();
         }
 
     }

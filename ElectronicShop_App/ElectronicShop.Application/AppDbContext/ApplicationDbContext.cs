@@ -52,7 +52,7 @@ namespace ElectronicShop.Application.AppDbContext
 
             modelBuilder.Entity<User>().HasData
                 (
-                new User() { Id = 1, NameEn = "admin", NameAr = "مدير النظام", FullAddress="admin" , Email="admin@admin.com" , UserName="admin" , Password="123" , PhoneNumber="01154465989" , 
+                new User() { Id = 1, NameEn = "admin", NameAr = "مدير النظام", FullAddress="admin" , Email="admin@admin.com" , UserName="admin" , Password= "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3", PhoneNumber="01154465989" , 
                     BirthDate = DateTime.Now ,RoleId = 1  ,  IsActive = true }
                 );
 

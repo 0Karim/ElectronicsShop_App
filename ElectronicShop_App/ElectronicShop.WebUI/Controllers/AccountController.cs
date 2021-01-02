@@ -60,6 +60,9 @@ namespace ElectronicShop.WebUI.Controllers
 
                 await sessionService.LoginUser(HttpContext, sessionUser);
 
+                if (sessionUser.Role.ToLower().Equals("admin"))
+                    return RedirectToAction("Index", "Product");
+
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -67,6 +70,18 @@ namespace ElectronicShop.WebUI.Controllers
                 TempData[Constants.ErrorMessage] = errorMessage;
                 return View(model);
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Register()
+        {
+            return View(new RegisterViewModel());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel user)
+        {
+            return View();
         }
 
         [HttpGet]

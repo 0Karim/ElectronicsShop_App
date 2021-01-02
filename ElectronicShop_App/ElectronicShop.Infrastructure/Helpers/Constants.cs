@@ -21,6 +21,10 @@ namespace ElectronicShop.Infrastructure.Helpers
 
         public static string ENCultureCode => "en";
 
+
+        public const string RTL = "RTL";
+        public const string LTR = "LTR";
+
         #endregion
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -12,10 +13,13 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json.Converters;
 
 namespace ElectronicShop.WebUI
 {
@@ -50,13 +54,19 @@ namespace ElectronicShop.WebUI
                 options.Cookie.Name = "ElectronicAppAdminAuthCookie";
             });
 
-            services.AddControllersWithViews();
+
+
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.Converters.Add(new StringEnumConverter());
+            });
 
             //EMBDED Services
             services.AddHttpContextAccessor();
             services.AddSession(opts =>
             {
-                opts.Cookie.IsEssential = true; // make the session cookie Essential
+                opts.Cookie.IsEssential = false; // make the session cookie Essential
+                opts.IdleTimeout = TimeSpan.FromSeconds(10);
             });
 
             services.AddAutoMapper(typeof(Startup));
@@ -65,6 +75,9 @@ namespace ElectronicShop.WebUI
             services.AddTransient<IHasherService, HasherService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<ISessionService, SessionService>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -80,6 +93,19 @@ namespace ElectronicShop.WebUI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            //app.UseRequestLocalization(new RequestLocalizationOptions
+            //{
+            //    DefaultRequestCulture = new RequestCulture(new CultureInfo("AR")),
+            //    SupportedCultures = new List<CultureInfo>
+            //    {
+            //        new CultureInfo("AR")
+            //    },
+            //    SupportedUICultures = new List<CultureInfo>
+            //    {
+            //        new CultureInfo("AR")
+            //    }
+            //});
 
             app.UseSession();
             app.UseHttpsRedirection();

@@ -1,8 +1,130 @@
-﻿
+﻿@using ElectronicShop.Infrastructure.Helpers;
+@model ElectronicShop.WebUI.Models.LoginViewModel;
+
 @{
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Login</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- begin::Head -->
+<!--<head>
+    <base href="">
+    <meta charset="utf-8" />
+    <title>Electronic Shop | Login </title>
+    <meta name="description" content="Login page to facilities App">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <!--begin::Fonts -->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">-->
+
+    <!--end::Fonts -->
+    <!--begin::Page Custom Styles(used by this page) -->
+    <!--<link href="/css/pages/login/login-1.css" rel="stylesheet" type="text/css" />-->
+
+    <!--end::Page Custom Styles -->
+    <!--begin::Global Theme Styles(used by all pages) -->
+    <!--<link href="/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/login.css" rel="stylesheet" type="text/css" />-->
+
+
+    <!--end::Global Theme Styles -->
+    <!--begin::Layout Skins(used by all pages) -->
+    <!--end::Layout Skins -->
+    <!--<link rel="shortcut icon" href="/media/icons/logotask.png" />
+</head>-->
+
+<!-- end::Head -->
+<!-- begin::Body -->
+<body class="kt-page--loading-enabled kt-page--loading kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
+
+    <!-- begin::Page loader -->
+    <!-- end::Page Loader -->
+    <!-- begin:: Page -->
+    <header>
+        <div class="header ml-5 mr-5 ">
+            <a href="#" class="logo_link">
+                <img src="" alt="logo" class="logo" />
+            </a>
+            <p class="header-info">
+                Electronic Shop App
+            </p>
+
+            <div class="header-right">
+                @*<a href="#">العربية</a>*@
+            </div>
+        </div>
+    </header>
+    <div class="row align-items-center col-sm-12 align-content-between">
+        <div class="col-sm-6">
+            <div class="kt-grid__item kt-grid__item--fluid  kt-grid__item--order-tablet-and-mobile-1  kt-login__wrapper">
+                <div class="kt-login__body">
+                    <div class="kt-login__form" style="margin:0 auto; padding: 50px;max-width:500px !important">
+                        <div class="kt-login__title mb-4">
+                            <h1>Welcome </h1>
+                            <h2>Lgoin to your account</h2>
+                        </div>
+
+                        @if (TempData[Constants.ErrorMessage] != null)
+                        {
+                            <div class="alert alert-bold alert-solid-danger alert-dismissible" role="alert">
+
+                                <div class="text-danger">@TempData[Constants.ErrorMessage]</div>
+                                <div class="alert-close">
+                                    <i class="flaticon2-cross kt-icon-sm" data-dismiss="alert"></i>
+                                </div>
+                            </div>
+                        }
+
+                        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "kt-form", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.UserName, "", new { @class = "form-control", @style = "background-color: white", placeholder = "Username", autocomplete = "off" })
+                                <div class="alert-danger">@Html.ValidationMessageFor(m => m.UserName , "" , new { @class= "text-danger" })</div>
+                            </div>
+                            <div class="form-group">
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @style = "background-color: white", placeholder = "Password", autocomplete = "off" })
+                                <div class="alert-danger">@Html.ValidationMessageFor(m => m.Password, "" , new {@class= "text-danger" })</div>
+                            </div>
+
+
+                            <div class="kt-login__actions">
+                                <button type="submit" class="btn btn-primary btn-elevate kt-login__btn-primary">Login</button>
+                                <a class="btn btn-primary" asp-controller="account" asp-action="register">
+                                    Register
+                                </a>
+                            </div>
+                        }
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 text-center">
+        </div>
+    </div>
+    <footer>
+        <a href="" target="_blank">
+            Electronic Shop App
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            All Rights Reserved
+        </a>
+    </footer>
+
+
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+
+
+
+</body>
+</html>
 

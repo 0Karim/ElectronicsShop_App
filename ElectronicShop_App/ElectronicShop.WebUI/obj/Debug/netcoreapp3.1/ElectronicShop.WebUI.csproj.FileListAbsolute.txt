@@ -1,8 +1,6 @@
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.csprojAssemblyReference.cache
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.AssemblyInfoInputs.cache
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.AssemblyInfo.cs
-D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.csproj.CoreCompileInputs.cache
-D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.MvcApplicationPartsAssemblyInfo.cache
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.RazorAssemblyInfo.cache
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.RazorAssemblyInfo.cs
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -160,3 +158,11 @@ D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.genruntimeconfig.cache
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDeined.cshtml.g.cs
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.csproj.CoreCompileInputs.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\ElectronicShop.WebUI.MvcApplicationPartsAssemblyInfo.cache
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

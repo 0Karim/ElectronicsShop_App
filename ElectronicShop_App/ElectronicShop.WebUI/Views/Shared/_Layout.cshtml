@@ -26,6 +26,14 @@
                         </li>
                     </ul>
                 </div>
+
+                <div>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -42,7 +50,29 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/sweet-alert/sweetalert.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <partial name="_ValidationScriptsPartial.cshtml" />
+
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/date-picker/jquery-ui.js"></script>
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/horizontal-menu/horizontal-menu.js"></script> <!-- SIDE-MENU JS -->
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/js/custom.js"></script><!-- CUSTOM JS-->
+
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/datatable/jquery.dataTables.min.js"></script>
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/datatable/dataTables.responsive.min.js"></script>
+
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/sidebar/sidebar.js"></script>
+
+    <!-- STICKY JS -->
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/js/stiky.js"></script>
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+    <script src="~/lib/Template/@ViewBag.LangDirection/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>
