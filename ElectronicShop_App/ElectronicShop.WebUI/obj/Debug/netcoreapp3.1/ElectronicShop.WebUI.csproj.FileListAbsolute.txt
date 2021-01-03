@@ -173,3 +173,5 @@ D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
 D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\Add.cshtml.g.cs
+D:\MyLearn\ElectronicShop\ElectronicsShop_App\ElectronicShop_App\ElectronicShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\Product\Edit.cshtml.g.cs

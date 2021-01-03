@@ -67,7 +67,7 @@ namespace ElectronicShop.WebUI.Controllers
 
         [HttpGet]
         public async Task<IActionResult> Add()
-        {            
+        {
             return View(new ProductViewModel());
         }
 
