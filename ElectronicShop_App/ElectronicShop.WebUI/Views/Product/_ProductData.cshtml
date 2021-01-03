@@ -1,4 +1,128 @@
-﻿
-@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model ElectronicShop.WebUI.Models.Product.ProductViewModel
+@using ElectronicShop.Domain.Enums;
+
+<div class="page-header">
+    <div>
+        <h1 class="page-title">Product</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index">Product</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@(Model.Id > 0 ? "Edit" : "Add")</li>
+        </ol>
+    </div>
+</div>
+
+<form asp-action="Edit" id="frmProduct">
+    <input type="hidden" asp-for="Id" id="hdnId" />
+
+    @Html.AntiForgeryToken()
+
+    <div class="card">
+        <div class="card-header">
+            <h3 class="mb-0 card-title">Product Data</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label class="form-label " asp-for="NameEn">English Name</label>
+                        <input type="text" class="form-control arabicOnly" id="txtEnName" maxlength="99" asp-for="NameEn" placeholder="English Name">
+                        <span asp-validation-for="NameEn" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label class="form-label " asp-for="NameAr">Arabic Name</label>
+                        <input type="text" class="form-control englishOnly" id="txtArName" maxlength="99" asp-for="NameAr" placeholder="Arabic Name">
+                        <span asp-validation-for="NameAr" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label class="form-label" for="ddlCategoryName">Category</label>
+                        <select id="ddlCategoryName" asp-for="CategoryId"
+                                class="form-control select2-show-search"
+                                asp-items="ViewBag.ListofCategories">
+                        </select>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label class="form-label " asp-for="Description">Product Description</label>
+                        <input type="text" class="form-control" id="description" maxlength="300" asp-for="Description" placeholder="Product Description">
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label class="form-label " asp-for="Price">Product Price</label>
+                        <input type="number" class="form-control allowNumOnly" id="price" asp-for="Price" placeholder="Product Price">
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <label class="form-label " asp-for="Quantity">Product Quantity</label>
+                        <input type="number" class="form-control allowNumOnly" id="quantity" asp-for="Quantity" placeholder="Product Quantity">
+                        <span asp-validation-for="NameAr" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <div class="btn-list text-left">
+                <a href="#" id="btnSubmit" class="btn btn-success">Save</a>
+            </div>
+        </div>
+
+    </div>
+</form>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+        $("#btnSubmit").click(function(event) {
+            event.preventDefault();
+            var form = $('#frmProduct');
+            var formData = form.serialize();
+            if (form.valid())
+            {
+                //ShowAjaxLoader();
+                $.ajax({
+                    url: '@Url.Action("SaveProduct")',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: formData,
+                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                    success: function (data)
+                    {
+                        //HideAjaxLoader();
+                        SetAlertMessage(data.message, data.messageType);
+                    },
+                    error: function (jqXhr, textStatus, errorMessage)
+                    {
+                        HideAjaxLoader();
+                        HandleAjaxError(jqXhr,
+                            "AjaxNotAuthenticated",
+                            "AjaxNotAuthorized",
+                            "GeneralAjaxError",
+                            "@AlertType.Danger");
+                    }
+                });
+            }
+        });
+    });
+
+</script>

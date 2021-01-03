@@ -20,6 +20,10 @@ namespace ElectronicShop.Infrastructure.Helpers
 
         public const string AllDdlItemValue = "0";
 
+        public const int SuccessStatus = 1;
+
+        public const int FailStatus = 0;
+
         #endregion
 
         public const string FullNameClaimType = "FullName";

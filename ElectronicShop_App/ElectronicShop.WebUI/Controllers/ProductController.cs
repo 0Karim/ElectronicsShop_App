@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using ElectronicShop.Application.Interfaces.IServices;
 using ElectronicShop.Domain.Entities;
+using ElectronicShop.Domain.Enums;
 using ElectronicShop.Infrastructure.Helpers;
 using ElectronicShop.Resources;
 using ElectronicShop.WebUI.Common.DataTables;
@@ -68,6 +69,7 @@ namespace ElectronicShop.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Add()
         {
+            ViewBag.ListofCategories = DdlHelper.GetSelectListItems(_categoryService.GetAllCategories(), false, true);
             return View(new ProductViewModel());
         }
 
@@ -94,24 +96,13 @@ namespace ElectronicShop.WebUI.Controllers
                 if (ModelState.IsValid)
                 {
 
-                    #region Add 
-
-                    if (model.Id == 0)
-                    {
-                    }
-
-                    #endregion
-
-                    #region Edit
-
-                    else
-                    {
-                    }
-
-                    #endregion
-
+                    var product = mapper.Map<Product>(model);
+                    product.IsActive = true;
+                    var status = _productService.SaveProduct(product);
                     TempData[Constants.SuccessMessage] = Messages.AddSuccess;
-                    return RedirectToAction("Index", "Product");
+
+                    //return RedirectToAction("Index", "Product");
+                    return Json(GetJsonResponse(status));
                 }
                 return View(model);
             }
@@ -126,5 +117,33 @@ namespace ElectronicShop.WebUI.Controllers
         {
             return View();
         }
+
+        #region Private Methods
+
+        private JsonSaveResponseResult GetJsonResponse(DbOperationStatusEnum status)
+        {
+            string message = Constants.ErrorMessage;
+
+            switch (status)
+            {
+                case DbOperationStatusEnum.Success:
+                    message = Messages.AddSuccess;
+                    break;
+                case DbOperationStatusEnum.Failed:
+                    message = Messages.CreateFailure;
+                    break;
+            }
+
+            return new JsonSaveResponseResult
+            {
+                OperationStatus = status == DbOperationStatusEnum.Success ? Constants.SuccessStatus : Constants.FailStatus,
+                MessageType = status == DbOperationStatusEnum.Success
+                    ? AlertType.Success.ToString()
+                    : AlertType.Warning.ToString(),
+                Message = message
+            };
+        }
+
+        #endregion
     }
 }
