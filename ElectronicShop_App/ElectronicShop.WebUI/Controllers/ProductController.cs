@@ -8,6 +8,7 @@ using ElectronicShop.Domain.Entities;
 using ElectronicShop.Infrastructure.Helpers;
 using ElectronicShop.Resources;
 using ElectronicShop.WebUI.Common.DataTables;
+using ElectronicShop.WebUI.Common.UiUtilities;
 using ElectronicShop.WebUI.Models;
 using ElectronicShop.WebUI.Models.Product;
 using ElectronicShop.WebUI.Models.Shared;
@@ -36,10 +37,11 @@ namespace ElectronicShop.WebUI.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            var categoriesList = _categoryService.GetAllCategories();
+            ViewBag.ListofCategories = DdlHelper.GetSelectListItems(categoriesList , true , false);
             return View();
         }
 
-        //[HttpPost]
         public async Task<IActionResult> GetProducts([FromBody] DtParameters dtParameters, int categoryId)
         {
             var orderString = DataTablesHelper.GetOrderStringFromDtParams(nameof(ProductViewModel.Id), dtParameters, new Dictionary<string, string>()

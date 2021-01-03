@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12">
                 <div class="form-group">
-                    <label class="form-label" for="ddlCountryName">Category</label>
+                    <label class="form-label" for="ddlCategoryName">Category</label>
                     <select id="ddlCategoryName"
                             class="form-control select2-show-search"
                             asp-items="ViewBag.ListofCategories">
@@ -87,7 +87,7 @@
 
         function ReloadWithParams() {
             var dt = initTable();
-            dt.ajax.url("@Url.Action("GetProducts")?&categoryId="+ $('#ddlCountryName').val()).load();
+            dt.ajax.url("@Url.Action("GetProducts")?&categoryId=" + $('#ddlCategoryName').val()).load();
         }
 
         function initTable() {

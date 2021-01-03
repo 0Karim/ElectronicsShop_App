@@ -8,12 +8,24 @@ namespace ElectronicShop.Infrastructure.Helpers
     {
         public const int PageSize = 5;
 
+        #region Messages
+
         public const string SuccessMessage = "SuccessMessage";
         public const string WarningMessage = "WarningMessage";
         public const string ErrorMessage = "ErrorMessage";
 
+        #endregion
+
+        #region Keys
+
+        public const string AllDdlItemValue = "0";
+
+        #endregion
+
         public const string FullNameClaimType = "FullName";
         public const string RoleClaimType = "Role";
+
+        public const string RoleAdmin = "admin";
 
         #region localization
 

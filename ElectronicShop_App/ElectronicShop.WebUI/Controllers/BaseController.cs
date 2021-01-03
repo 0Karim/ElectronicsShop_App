@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Routing;
 
 namespace ElectronicShop.WebUI.Controllers
 {
@@ -25,6 +26,9 @@ namespace ElectronicShop.WebUI.Controllers
             ViewBag.LangDirection = Constants.LTR;
             //ViewBag.CurrentLang = _currentLang = rqf.RequestCulture.UICulture.Name.Contains(Constants.ARCultureCode) ? Constants.ARCultureCode : Constants.ENCultureCode;
             ViewBag.CurrentLang =  Constants.ENCultureCode;
+
+            //var currentUserLoggedInRule = context.HttpContext.User.Claims.Where(c => c.Type == Constants.RoleClaimType).Select(x => x.Value).FirstOrDefault();
+
             base.OnActionExecuting(context);
         }
     }
