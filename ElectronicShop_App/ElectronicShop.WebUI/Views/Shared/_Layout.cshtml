@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using ElectronicShop.Infrastructure.Helpers;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -33,7 +34,18 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-dark">EN</a>
+                            @if (ViewBag.CurrentLang == Constants.ArabicLang)
+                            {
+                                <a class="lang-link" asp-controller="CultureHandler" asp-action="SetCulture" asp-route-culture="en" id="enLink" role="button">
+                                    <b>En</b>
+                                </a>
+                            }
+                            else
+                            {
+                                <a class="lang-link" asp-controller="CultureHandler" asp-action="SetCulture" asp-route-culture="ar" id="arLink" role="button">
+                                    عربى
+                                </a>
+                            }
                         </li>
                     </ul>
                 </div>

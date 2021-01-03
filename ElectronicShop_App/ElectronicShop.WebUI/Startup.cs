@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 using AutoMapper;
 using ElectronicShop.Application.AppDbContext;
@@ -14,6 +16,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using Microsoft.Extensions.Configuration;
@@ -35,6 +38,7 @@ namespace ElectronicShop.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            ConfigureCulturesAndLocalization(services);
 
             #region Configure Database
 
@@ -54,7 +58,9 @@ namespace ElectronicShop.WebUI
                 options.Cookie.Name = "ElectronicAppAdminAuthCookie";
             });
 
-
+            services.AddSingleton<HtmlEncoder>(
+                HtmlEncoder.Create(allowedRanges: new[] { UnicodeRanges.BasicLatin,
+                    UnicodeRanges.Arabic }));
 
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
             {
@@ -94,22 +100,11 @@ namespace ElectronicShop.WebUI
                 app.UseHsts();
             }
 
-            //app.UseRequestLocalization(new RequestLocalizationOptions
-            //{
-            //    DefaultRequestCulture = new RequestCulture(new CultureInfo("AR")),
-            //    SupportedCultures = new List<CultureInfo>
-            //    {
-            //        new CultureInfo("AR")
-            //    },
-            //    SupportedUICultures = new List<CultureInfo>
-            //    {
-            //        new CultureInfo("AR")
-            //    }
-            //});
-
             app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseRequestLocalization();
 
             app.UseRouting();
 
@@ -122,6 +117,38 @@ namespace ElectronicShop.WebUI
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+
+        private void ConfigureCulturesAndLocalization(IServiceCollection services)
+        {
+            var arCulture = new CultureInfo("ar");
+            arCulture.DateTimeFormat.Calendar = new GregorianCalendar();
+
+            var enCulture = new CultureInfo("en");
+            CultureInfo[] supportedCultures = new[]
+            {
+                arCulture,
+                enCulture
+            };
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                options.DefaultRequestCulture = new RequestCulture("en", "en");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+                options.RequestCultureProviders = new List<IRequestCultureProvider>
+                {
+                    new CookieRequestCultureProvider(),
+                    new QueryStringRequestCultureProvider()
+                };
+            });
+
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+
+            services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization();
+
         }
     }
 }

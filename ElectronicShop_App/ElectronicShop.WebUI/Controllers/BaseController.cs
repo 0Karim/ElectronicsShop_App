@@ -21,13 +21,9 @@ namespace ElectronicShop.WebUI.Controllers
         {
             var rqf = Request.HttpContext.Features.Get<IRequestCultureFeature>();
             // Culture contains the information of the requested culture
-            //ViewBag.RequestCulture = rqf.RequestCulture.UICulture;
-            //ViewBag.LangDirection = rqf.RequestCulture.UICulture.TextInfo.IsRightToLeft ? Constants.RTL : Constants.LTR;
-            ViewBag.LangDirection = Constants.LTR;
-            //ViewBag.CurrentLang = _currentLang = rqf.RequestCulture.UICulture.Name.Contains(Constants.ARCultureCode) ? Constants.ARCultureCode : Constants.ENCultureCode;
-            ViewBag.CurrentLang =  Constants.ENCultureCode;
-
-            //var currentUserLoggedInRule = context.HttpContext.User.Claims.Where(c => c.Type == Constants.RoleClaimType).Select(x => x.Value).FirstOrDefault();
+            ViewBag.RequestCulture = rqf.RequestCulture.UICulture;
+            ViewBag.LangDirection = rqf.RequestCulture.UICulture.TextInfo.IsRightToLeft ? Constants.RTL : Constants.LTR;
+            ViewBag.CurrentLang = _currentLang = rqf.RequestCulture.UICulture.Name.Contains(Constants.ArabicLang) ? Constants.ArabicLang : Constants.EnLang;
 
             base.OnActionExecuting(context);
         }

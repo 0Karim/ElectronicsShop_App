@@ -13,6 +13,7 @@ using ElectronicShop.WebUI.Common.UiUtilities;
 using ElectronicShop.WebUI.Models;
 using ElectronicShop.WebUI.Models.Product;
 using ElectronicShop.WebUI.Models.Shared;
+using ElectronicShop.WebUI.Resources.Shared;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -76,14 +77,21 @@ namespace ElectronicShop.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int Id)
         {
-            var product = new ProductViewModel();
+            var model = new ProductViewModel();
             try
             {
-                return View(product);
+                var product = _productService.GetProduct(Id);
+
+                if (product == null)
+                    return RedirectToAction("Index");
+
+                ViewBag.ListofCategories = DdlHelper.GetSelectListItems(_categoryService.GetAllCategories(), false, true);
+                model = mapper.Map<ProductViewModel>(product);
+                return View(model);
             }
             catch (Exception ex)
             {
-                return View(product);
+                return View(new ProductViewModel());
             }
         }
 
@@ -101,7 +109,6 @@ namespace ElectronicShop.WebUI.Controllers
                     var status = _productService.SaveProduct(product);
                     TempData[Constants.SuccessMessage] = Messages.AddSuccess;
 
-                    //return RedirectToAction("Index", "Product");
                     return Json(GetJsonResponse(status));
                 }
                 return View(model);
@@ -115,7 +122,13 @@ namespace ElectronicShop.WebUI.Controllers
 
         public async Task<IActionResult> SetProductStatus(int productId)
         {
-            return View();
+            var status = _productService.SetProductStatus(productId);
+
+            return Json(new JsonSaveResponseResult
+            {
+                OperationStatus = status == DbOperationStatusEnum.Success ? Constants.SuccessStatus : Constants.FailStatus,
+                Message = status == DbOperationStatusEnum.Success ? ErrorMessages.Success : ErrorMessages.Error
+            });
         }
 
         #region Private Methods

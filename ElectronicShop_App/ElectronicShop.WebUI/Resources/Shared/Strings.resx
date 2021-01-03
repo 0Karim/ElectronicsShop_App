@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateSuccess" xml:space="preserve">
+    <value>Activated successfully</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>MerchEX</value>
+  </data>
+  <data name="BackToHome" xml:space="preserve">
+    <value>Back to home</value>
+  </data>
+  <data name="CitiesTitle" xml:space="preserve">
+    <value>Cities</value>
+  </data>
+  <data name="CountriesTitle" xml:space="preserve">
+    <value>Countries</value>
+  </data>
+  <data name="DeleteSuccess" xml:space="preserve">
+    <value>Delete successfully</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="NotActive" xml:space="preserve">
+    <value>Not Active</value>
+  </data>
+  <data name="RegionsTitle" xml:space="preserve">
+    <value>Regions</value>
+  </data>
+  <data name="PleaseSelect" xml:space="preserve">
+    <value>Please select item</value>
+  </data>
+  <data name="SaveButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveSuccess" xml:space="preserve">
+    <value>Saved Successfully</value>
+  </data>
+  <data name="StoresTitle" xml:space="preserve">
+    <value>Stores</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="GeoSetting" xml:space="preserve">
+    <value>Geo Settings</value>
+  </data>
+  <data name="StoreClusterTitle" xml:space="preserve">
+    <value>Store Cluster</value>
+  </data>
+  <data name="StoreSetting" xml:space="preserve">
+    <value>Store Admin</value>
+  </data>
+  <data name="MerchandiserTitle" xml:space="preserve">
+    <value>Merchandisers</value>
+  </data>
+  <data name="ClientsTitle" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="Aug" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="Dec" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="Feb" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="Jan" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="Mar" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="Nov" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="Oct" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="Sep" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="StoresClusterTitle" xml:space="preserve">
+    <value>Stores Cluster</value>
+  </data>
+  <data name="MerchandiserSettings" xml:space="preserve">
+    <value>Merchandiser Admin</value>
+  </data>
+  <data name="JourneyTitle" xml:space="preserve">
+    <value>Merchandiser Schedule</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="PasswordChangeSuccess" xml:space="preserve">
+    <value>Password changed successfully, you will be redirected to login</value>
+  </data>
+  <data name="SystemAdmin" xml:space="preserve">
+    <value>System Admin</value>
+  </data>
+  <data name="BarCodesTitle" xml:space="preserve">
+    <value>Barcodes</value>
+  </data>
+  <data name="PlanogramSettings" xml:space="preserve">
+    <value>Planogram Admin</value>
+  </data>
+  <data name="PlanogramTitle" xml:space="preserve">
+    <value>Planogram</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>Items Admin</value>
+  </data>
+  <data name="ItemsBarcodes" xml:space="preserve">
+    <value>Items Barcodes</value>
+  </data>
+  <data name="AdminsTitle" xml:space="preserve">
+    <value>System users</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DecisionTitle" xml:space="preserve">
+    <value>Decisions</value>
+  </data>
+  <data name="DeleteSuccessScheduDisabled" xml:space="preserve">
+    <value>Deactivate successfully, merchanidser schedules related to this store has been disabled</value>
+  </data>
+  <data name="ItemsDecisions" xml:space="preserve">
+    <value>Decisions</value>
+  </data>
+  <data name="StockTitle" xml:space="preserve">
+    <value>Items Stocks</value>
+  </data>
+  <data name="InsertSuccess" xml:space="preserve">
+    <value>Inserted Successfully</value>
+  </data>
+  <data name="UpdateSuccess" xml:space="preserve">
+    <value>Updated Successfully</value>
+  </data>
+  <data name="PriorityTitle" xml:space="preserve">
+    <value>Planogram priority</value>
+  </data>
+  <data name="ItemsTitle" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="GradeDecisionTitle" xml:space="preserve">
+    <value>Grade decisions and status</value>
+  </data>
+  <data name="ItemsGradeDecisions" xml:space="preserve">
+    <value>Grade decisions and status</value>
+  </data>
+  <data name="AvailabilitySummaryTitle" xml:space="preserve">
+    <value>Availability Summary</value>
+  </data>
+  <data name="AvailabilityDetailsTitle" xml:space="preserve">
+    <value>Availability Details</value>
+  </data>
+  <data name="FreeScanTitle" xml:space="preserve">
+    <value>Free Scan</value>
+  </data>
+  <data name="ExportExcel" xml:space="preserve">
+    <value>Export Excel</value>
+  </data>
+  <data name="AvailabilityReports" xml:space="preserve">
+    <value>Availability </value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="RefNumber" xml:space="preserve">
+    <value>Session ID</value>
+  </data>
+  <data name="ScannedSKUs" xml:space="preserve">
+    <value>ScannedSKUs</value>
+  </data>
+  <data name="StartSession" xml:space="preserve">
+    <value>Start Session</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Store" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="Abc" xml:space="preserve">
+    <value>ABC</value>
+  </data>
+  <data name="ALevel" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="AvlStatus" xml:space="preserve">
+    <value>Avl.Status</value>
+  </data>
+  <data name="BLevel" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="CCode" xml:space="preserve">
+    <value>CCode</value>
+  </data>
+  <data name="CLevel" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="ClusterCode" xml:space="preserve">
+    <value>C.Code</value>
+  </data>
+  <data name="ClusterRange" xml:space="preserve">
+    <value>C.R</value>
+  </data>
+  <data name="DecisionStatus" xml:space="preserve">
+    <value>Decision</value>
+  </data>
+  <data name="DetailsSearch" xml:space="preserve">
+    <value>Details Search</value>
+  </data>
+  <data name="DetailsTitle" xml:space="preserve">
+    <value>Availability Details</value>
+  </data>
+  <data name="IsMsl" xml:space="preserve">
+    <value>IsMSL</value>
+  </data>
+  <data name="ItemDesc" xml:space="preserve">
+    <value>Item Desc</value>
+  </data>
+  <data name="ItemNumber" xml:space="preserve">
+    <value>Item NO.</value>
+  </data>
+  <data name="JdaStatus" xml:space="preserve">
+    <value>JDA</value>
+  </data>
+  <data name="MaterialGrade" xml:space="preserve">
+    <value>M.G</value>
+  </data>
+  <data name="MaterialType" xml:space="preserve">
+    <value>M.T</value>
+  </data>
+  <data name="Otc" xml:space="preserve">
+    <value>OTC</value>
+  </data>
+  <data name="SalesPrice" xml:space="preserve">
+    <value>SP.VAT</value>
+  </data>
+  <data name="ScanningStatus" xml:space="preserve">
+    <value>S.S</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchCriteria" xml:space="preserve">
+    <value>Search Criteria</value>
+  </data>
+  <data name="SearchResult" xml:space="preserve">
+    <value>Search Result</value>
+  </data>
+  <data name="Sr" xml:space="preserve">
+    <value>SR</value>
+  </data>
+  <data name="Vendor" xml:space="preserve">
+    <value>Vendor</value>
+  </data>
+  <data name="VNumber" xml:space="preserve">
+    <value>V.Number</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+  <data name="DescionMsg" xml:space="preserve">
+    <value>Descion</value>
+  </data>
+  <data name="ExpireDate" xml:space="preserve">
+    <value>Expire Date</value>
+  </data>
+  <data name="ItemDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ScanDate" xml:space="preserve">
+    <value>Scan Date</value>
+  </data>
+  <data name="Sku" xml:space="preserve">
+    <value>Sku</value>
+  </data>
+  <data name="PerformanceReportTitle" xml:space="preserve">
+    <value>Merchandisers Performance Report</value>
+  </data>
+  <data name="AvailabilityPerformanceReport" xml:space="preserve">
+    <value>Availability</value>
+  </data>
+  <data name="FreshnessPerformanceReport" xml:space="preserve">
+    <value>Freshness</value>
+  </data>
+  <data name="Hour01" xml:space="preserve">
+    <value>01:00</value>
+  </data>
+  <data name="Hour02" xml:space="preserve">
+    <value>02:00</value>
+  </data>
+  <data name="Hour03" xml:space="preserve">
+    <value>03:00</value>
+  </data>
+  <data name="Hour04" xml:space="preserve">
+    <value>04:00</value>
+  </data>
+  <data name="Hour05" xml:space="preserve">
+    <value>05:00</value>
+  </data>
+  <data name="Hour06" xml:space="preserve">
+    <value>06:00</value>
+  </data>
+  <data name="Hour07" xml:space="preserve">
+    <value>07:00</value>
+  </data>
+  <data name="Hour08" xml:space="preserve">
+    <value>08:00</value>
+  </data>
+  <data name="Hour09" xml:space="preserve">
+    <value>09:00</value>
+  </data>
+  <data name="Hour10" xml:space="preserve">
+    <value>10:00</value>
+  </data>
+  <data name="Hour11" xml:space="preserve">
+    <value>11:00</value>
+  </data>
+  <data name="Hour12" xml:space="preserve">
+    <value>12:00</value>
+  </data>
+  <data name="Hour13" xml:space="preserve">
+    <value>13:00</value>
+  </data>
+  <data name="Hour14" xml:space="preserve">
+    <value>14:00</value>
+  </data>
+  <data name="Hour15" xml:space="preserve">
+    <value>15:00</value>
+  </data>
+  <data name="Hour16" xml:space="preserve">
+    <value>16:00</value>
+  </data>
+  <data name="Hour17" xml:space="preserve">
+    <value>17:00</value>
+  </data>
+  <data name="Hour18" xml:space="preserve">
+    <value>18:00</value>
+  </data>
+  <data name="Hour19" xml:space="preserve">
+    <value>19:00</value>
+  </data>
+  <data name="Hour20" xml:space="preserve">
+    <value>20:00</value>
+  </data>
+  <data name="Hour21" xml:space="preserve">
+    <value>21:00</value>
+  </data>
+  <data name="Hour22" xml:space="preserve">
+    <value>22:00</value>
+  </data>
+  <data name="Hour23" xml:space="preserve">
+    <value>23:00</value>
+  </data>
+  <data name="Hour24" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="Merchandiser" xml:space="preserve">
+    <value>Merchandiser</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PerformanceReportMenu" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="UnsuccessfulScans" xml:space="preserve">
+    <value>Unsuccessful Scans</value>
+  </data>
+  <data name="Photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="AvailabilityOutOfStockTitle" xml:space="preserve">
+    <value>Out of Stock Report</value>
+  </data>
+  <data name="Availability" xml:space="preserve">
+    <value>Availability</value>
+  </data>
+  <data name="CategoryManager" xml:space="preserve">
+    <value>Category Manager</value>
+  </data>
+  <data name="PurchaseArea" xml:space="preserve">
+    <value>Purchase Area</value>
+  </data>
+  <data name="SapStatus" xml:space="preserve">
+    <value>SAP Status</value>
+  </data>
+  <data name="StockOnHand" xml:space="preserve">
+    <value>Stock On Hand</value>
+  </data>
+  <data name="StoreCode" xml:space="preserve">
+    <value>Store Code</value>
+  </data>
+  <data name="ACode" xml:space="preserve">
+    <value>A-Code</value>
+  </data>
+  <data name="ADesc" xml:space="preserve">
+    <value>ADesc</value>
+  </data>
+  <data name="BCode" xml:space="preserve">
+    <value>B-Code</value>
+  </data>
+  <data name="BDesc" xml:space="preserve">
+    <value>BDesc</value>
+  </data>
+  <data name="C-Code" xml:space="preserve">
+    <value>C-Code</value>
+  </data>
+  <data name="CDesc" xml:space="preserve">
+    <value>CDesc</value>
+  </data>
+  <data name="UnsuccessfulScansReportMenu" xml:space="preserve">
+    <value>Unsucessful scan</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="NotAvailable" xml:space="preserve">
+    <value>Not available</value>
+  </data>
+  <data name="VendorNum" xml:space="preserve">
+    <value>Vendor No.</value>
+  </data>
+  <data name="ComprehensiveFreshnessTitle" xml:space="preserve">
+    <value>Comprehensive Freshness Report</value>
+  </data>
+  <data name="Cluster" xml:space="preserve">
+    <value>Cluster</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="FreshnessByRegion" xml:space="preserve">
+    <value>Freshness By Region</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CityId" xml:space="preserve">
+    <value>CityId</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FreeScanMode" xml:space="preserve">
+    <value>FreeScanMode</value>
+  </data>
+  <data name="LastLoginDate" xml:space="preserve">
+    <value>LastLoginDate</value>
+  </data>
+  <data name="MobileNumber" xml:space="preserve">
+    <value>MobileNumber</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="UserActionDate" xml:space="preserve">
+    <value>UserActionDate</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>UserId</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="ImportExcelUploadFail" xml:space="preserve">
+    <value>File uploaded successfully, but there is not data to display, it may be no changes or addition to records or excel data is not valid</value>
+  </data>
+  <data name="ImportExcelUploadSuccess" xml:space="preserve">
+    <value>File uploaded successfully, a sample of file data is loaded in the table below, please review it then click save to save changes</value>
+  </data>
+  <data name="ExcelFileNotExist" xml:space="preserve">
+    <value>Excel File Not Exist</value>
+  </data>
+  <data name="SomethingWentWrong" xml:space="preserve">
+    <value>Something went wrong please try again later</value>
+  </data>
+  <data name="AddedSuccessfuly" xml:space="preserve">
+    <value>Excel sheet data added successfuly.</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="AvailabilityDashboard" xml:space="preserve">
+    <value>Availability Dashboard</value>
+  </data>
+  <data name="ReportSummaryTitle" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="24Plus" xml:space="preserve">
+    <value>24+</value>
+  </data>
+  <data name="FreshnessDetailsTitle" xml:space="preserve">
+    <value>Freshness </value>
+  </data>
+  <data name="FreshnessDetailsMenu" xml:space="preserve">
+    <value>Freshness Details</value>
+  </data>
+  <data name="FreshnessReports" xml:space="preserve">
+    <value>Freshness</value>
+  </data>
+  <data name="ShelfBrandWidthTitle" xml:space="preserve">
+    <value>Brand Shelf Width</value>
+  </data>
+  <data name="ClosedSessions" xml:space="preserve">
+    <value>Closed Sessions</value>
+  </data>
+  <data name="OpenSessions" xml:space="preserve">
+    <value>Open Sessions</value>
+  </data>
+  <data name="BrandsMenu" xml:space="preserve">
+    <value>Brands</value>
+  </data>
+  <data name="SomeAddedSuccessfuly" xml:space="preserve">
+    <value>Some records added successfuly and some records have values already exists edit this values and try again.</value>
+  </data>
+  <data name="MapLocation" xml:space="preserve">
+    <value>Store Location</value>
+  </data>
+  <data name="ALabel" xml:space="preserve">
+    <value>A Label</value>
+  </data>
+  <data name="BrandWidth" xml:space="preserve">
+    <value>Brand Width</value>
+  </data>
+  <data name="CLabel" xml:space="preserve">
+    <value>C Label</value>
+  </data>
+  <data name="NoOfShelves" xml:space="preserve">
+    <value>No. Of Shelves</value>
+  </data>
+  <data name="SuggestedBrandWidth" xml:space="preserve">
+    <value>Suggested Brand Width</value>
+  </data>
+  <data name="TotalShelfWidth" xml:space="preserve">
+    <value>Total Shelf Width</value>
+  </data>
+  <data name="NotScanned" xml:space="preserve">
+    <value>Not Scanned</value>
+  </data>
+  <data name="Scanned" xml:space="preserve">
+    <value>Scanned</value>
+  </data>
+  <data name="ShareOfShelfMenu" xml:space="preserve">
+    <value>Share of shelf</value>
+  </data>
+  <data name="TMRID" xml:space="preserve">
+    <value>TMR ID</value>
+  </data>
+  <data name="TMRName" xml:space="preserve">
+    <value>TMR Name</value>
+  </data>
+  <data name="WorkingDate" xml:space="preserve">
+    <value>Working Date</value>
+  </data>
+  <data name="MerchandiserId" xml:space="preserve">
+    <value>TRM ID</value>
+  </data>
+  <data name="MerchandiserName" xml:space="preserve">
+    <value>Merchandiser Name</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Share %</value>
+  </data>
+  <data name="OnGoing" xml:space="preserve">
+    <value>Ongoing</value>
+  </data>
+  <data name="ExportMasterExcel" xml:space="preserve">
+    <value>Export excel for selected stores</value>
+  </data>
+  <data name="PlanoGramDetailsReportTitle" xml:space="preserve">
+    <value>PlanoGram Details Report</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>Of</value>
+  </data>
+  <data name="ScannedName" xml:space="preserve">
+    <value>Scanned</value>
+  </data>
+  <data name="DeactivatedSuccess" xml:space="preserve">
+    <value>Deactivated successfully</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="MissionStatus" xml:space="preserve">
+    <value>Mission Status</value>
+  </data>
+  <data name="SessionId" xml:space="preserve">
+    <value>Session Id</value>
+  </data>
+  <data name="MerchandiserRepeated" xml:space="preserve">
+    <value>Some merchandiser data already exsists please select unique name and username and try again.</value>
+  </data>
+  <data name="JourneyRepeated" xml:space="preserve">
+    <value>Some Journey data intersected with exist journies please select valid dates and try again. </value>
+  </data>
+  <data name="PlanoGramSummaryReportTitle" xml:space="preserve">
+    <value>Planogram Summary Report</value>
+  </data>
+  <data name="PlanogramDetails" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="PlanogramReportTitle" xml:space="preserve">
+    <value>Planogram</value>
+  </data>
+  <data name="PlanogramSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="PlanoGramBackdoorTitle" xml:space="preserve">
+    <value>PlanoGram Backdoor</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="PlanoGramPhotosTitle" xml:space="preserve">
+    <value>Planogram Photos</value>
+  </data>
+  <data name="PharmacyOnly" xml:space="preserve">
+    <value>Pharmacy Only</value>
+  </data>
+  <data name="PharmacyWithCode" xml:space="preserve">
+    <value>Pharmacy With Code</value>
+  </data>
+  <data name="SuppliersTitle" xml:space="preserve">
+    <value>Suppliers</value>
+  </data>
+  <data name="AddSupplierUserTitle" xml:space="preserve">
+    <value>Add Supplier User</value>
+  </data>
+  <data name="EditSupplierUserTitle" xml:space="preserve">
+    <value>Edit Supplier User</value>
+  </data>
+  <data name="SupplierUserTitle" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="NoPhotosFound" xml:space="preserve">
+    <value>No Photos Found</value>
+  </data>
+  <data name="Found" xml:space="preserve">
+    <value>Found</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="ExportDetailsDetailExcel" xml:space="preserve">
+    <value>Export Details</value>
+  </data>
+  <data name="ExportDetailsMasterExcel" xml:space="preserve">
+    <value>Export Summary</value>
+  </data>
+  <data name="ShelfConfigurationTitle" xml:space="preserve">
+    <value>Shelf Configuration</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>Closed By</value>
+  </data>
+  <data name="OpenBy" xml:space="preserve">
+    <value>Open By</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="ScannedPlanograms" xml:space="preserve">
+    <value>Scanned Planograms</value>
+  </data>
+  <data name="SessionEndDate" xml:space="preserve">
+    <value>Session End Date</value>
+  </data>
+  <data name="SessionStartDate" xml:space="preserve">
+    <value>Session Start Date</value>
+  </data>
+  <data name="TotalPlanograms" xml:space="preserve">
+    <value>Total Planograms</value>
+  </data>
+  <data name="SessionStatus" xml:space="preserve">
+    <value>Session Status</value>
+  </data>
+  <data name="ScanStatus" xml:space="preserve">
+    <value>Scan Status</value>
+  </data>
+  <data name="ExportNotFound" xml:space="preserve">
+    <value>Export Not Found (Active Stock)</value>
+  </data>
+  <data name="SosConfigMenu" xml:space="preserve">
+    <value>Shelf config.</value>
+  </data>
+  <data name="SosDetailsMenu" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="FirstHour" xml:space="preserve">
+    <value>First Scan</value>
+  </data>
+  <data name="LastHour" xml:space="preserve">
+    <value>Last Scan</value>
+  </data>
+  <data name="ZoneTitle" xml:space="preserve">
+    <value>Zones</value>
+  </data>
+  <data name="AvailabilityDetailTitle" xml:space="preserve">
+    <value>Availability Detail</value>
+  </data>
+  <data name="BrandName" xml:space="preserve">
+    <value>Brand Name</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ItemDecisionStatus" xml:space="preserve">
+    <value>Item Decision Status</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="SAPStock" xml:space="preserve">
+    <value>SAP Stock</value>
+  </data>
+  <data name="SessionEnd" xml:space="preserve">
+    <value>Session End Date</value>
+  </data>
+  <data name="SessionStart" xml:space="preserve">
+    <value>Session Start Date</value>
+  </data>
+  <data name="VendorId" xml:space="preserve">
+    <value>Vendor No</value>
+  </data>
+  <data name="VendorName" xml:space="preserve">
+    <value>Vendor Name</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="ProductData" xml:space="preserve">
+    <value>Product Data</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Product</value>
+  </data>
+</root>

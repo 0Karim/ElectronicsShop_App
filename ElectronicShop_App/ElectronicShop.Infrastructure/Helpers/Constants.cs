@@ -37,6 +37,8 @@ namespace ElectronicShop.Infrastructure.Helpers
 
         public static string ENCultureCode => "en";
 
+        public const string ArabicLang = "ar";
+        public const string EnLang = "en";
 
         public const string RTL = "RTL";
         public const string LTR = "LTR";

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tK6/FDTPhsGAv6Eqeyb6EcFevwedFtTGz32KF1lchtNthTH/xww+dAELF3sGdUpfBV+LR91uoQgRsrrvYD86nw==",
+  "dgSpecHash": "IigIRJL5Ll39AXdwvVcS8uEojLuL+FYyPm0WEXJRDAXJUiB3qjaV/Z/Cy0UsLMesPZeMS8oHlv6PzDRXYGNrsg==",
   "success": true,
   "projectFilePath": "D:\\MyLearn\\ElectronicShop\\ElectronicsShop_App\\ElectronicShop_App\\ElectronicShop.WebUI\\ElectronicShop.WebUI.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,8 @@
     "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.localization\\5.0.1\\microsoft.extensions.localization.5.0.1.nupkg.sha512",
+    "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\5.0.1\\microsoft.extensions.localization.abstractions.5.0.1.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\karim\\.nuget\\packages\\microsoft.extensions.objectpool\\2.2.0\\microsoft.extensions.objectpool.2.2.0.nupkg.sha512",

@@ -1,12 +1,16 @@
 ﻿@model ElectronicShop.WebUI.Models.Product.ProductViewModel
 @using ElectronicShop.Domain.Enums;
+@using ElectronicShop.WebUI.Resources.Shared;
+@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer Localizer;
+
 
 <div class="page-header">
     <div>
-        <h1 class="page-title">Product</h1>
+        <h1 class="page-title">@Strings.Products</h1>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a asp-action="Index">Product</a></li>
-            <li class="breadcrumb-item active" aria-current="page">@(Model.Id > 0 ? "Edit" : "Add")</li>
+            <li class="breadcrumb-item"><a asp-action="Index">@Strings.Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@(Model.Id > 0 ? Strings.Edit : Strings.Add)</li>
         </ol>
     </div>
 </div>
@@ -18,29 +22,29 @@
 
     <div class="card">
         <div class="card-header">
-            <h3 class="mb-0 card-title">Product Data</h3>
+            <h3 class="mb-0 card-title">@Strings.ProductData</h3>
         </div>
         <div class="card-body">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
-                        <label class="form-label " asp-for="NameEn">English Name</label>
-                        <input type="text" class="form-control arabicOnly" id="txtEnName" maxlength="99" asp-for="NameEn" placeholder="English Name">
+                        <label class="form-label " asp-for="NameEn">@Localizer.GetString("EnglishName")</label>
+                        <input type="text" class="form-control arabicOnly" id="txtEnName" maxlength="99" asp-for="NameEn" placeholder="@Localizer.GetString("EnglishName")">
                         <span asp-validation-for="NameEn" class="text-danger"></span>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
-                        <label class="form-label " asp-for="NameAr">Arabic Name</label>
-                        <input type="text" class="form-control englishOnly" id="txtArName" maxlength="99" asp-for="NameAr" placeholder="Arabic Name">
+                        <label class="form-label " asp-for="NameAr">@Localizer.GetString("ArabicName")</label>
+                        <input type="text" class="form-control englishOnly" id="txtArName" maxlength="99" asp-for="NameAr" placeholder="@Localizer.GetString("ArabicName")">
                         <span asp-validation-for="NameAr" class="text-danger"></span>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
-                        <label class="form-label" for="ddlCategoryName">Category</label>
+                        <label class="form-label" for="ddlCategoryName">@Localizer.GetString("Category")</label>
                         <select id="ddlCategoryName" asp-for="CategoryId"
                                 class="form-control select2-show-search"
                                 asp-items="ViewBag.ListofCategories">
@@ -53,16 +57,16 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
-                        <label class="form-label " asp-for="Description">Product Description</label>
-                        <input type="text" class="form-control" id="description" maxlength="300" asp-for="Description" placeholder="Product Description">
+                        <label class="form-label " asp-for="Description">@Localizer.GetString("Description")</label>
+                        <input type="text" class="form-control" id="description" maxlength="300" asp-for="Description" placeholder="@Localizer.GetString("Description")">
                         <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
-                        <label class="form-label " asp-for="Price">Product Price</label>
-                        <input type="number" class="form-control allowNumOnly" id="price" asp-for="Price" placeholder="Product Price">
+                        <label class="form-label " asp-for="Price">@Localizer.GetString("Price")</label>
+                        <input type="number" class="form-control allowNumOnly" id="price" asp-for="Price" placeholder="@Localizer.GetString("Price")">
                         <span asp-validation-for="Price" class="text-danger"></span>
                     </div>
                 </div>
@@ -70,8 +74,8 @@
 
                 <div class="col-lg-6 col-md-12">
                     <div class="form-group">
-                        <label class="form-label " asp-for="Quantity">Product Quantity</label>
-                        <input type="number" class="form-control allowNumOnly" id="quantity" asp-for="Quantity" placeholder="Product Quantity">
+                        <label class="form-label " asp-for="Quantity">@Localizer.GetString("Quantity")</label>
+                        <input type="number" class="form-control allowNumOnly" id="quantity" asp-for="Quantity" placeholder="@Localizer.GetString("Quantity")">
                         <span asp-validation-for="NameAr" class="text-danger"></span>
                     </div>
                 </div>
@@ -81,7 +85,7 @@
         </div>
         <div class="card-footer">
             <div class="btn-list text-left">
-                <a href="#" id="btnSubmit" class="btn btn-success">Save</a>
+                <a href="#" id="btnSubmit" class="btn btn-success">@Strings.SaveButton</a>
             </div>
         </div>
 
@@ -115,9 +119,9 @@
                     {
                         HideAjaxLoader();
                         HandleAjaxError(jqXhr,
-                            "AjaxNotAuthenticated",
-                            "AjaxNotAuthorized",
-                            "GeneralAjaxError",
+                            "@ErrorMessages.AjaxNotAuthenticated",
+                            "@ErrorMessages.AjaxNotAuthorized",
+                            "@ErrorMessages.GeneralAjaxError",
                             "@AlertType.Danger");
                     }
                 });
